@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios con HTML 6</title>
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<header> <img src="imagenes/CABEZA.gif" width="1330"> </header>
+	<nav>
+		<ul>
+	 		<li> <a href="cabeza.html"> INICIO </a></li>
+	 		
+	 		<LI> <a href="animacion.HTML"> ANIMACION </a></LI>
+	 		<li> <a href="video.html"> VIDEO </a></li>
+	 		<li> <a href="formularios.html"> FORMULARIOS</a></li>
+	 		<li> <a href="audio.html"> AUDIO </a></li>
+	 		<LI> <a href="editable.HTML"> EDITABLE </a></LI>
+	 		
+	 	</ul>
+	</nav>
+	<section>
+		<article>
+			<H2> Formularios </H2>
+			<blockquote>
+				Los formularios fueron una de las primeras mejoras que se dieron a conocer de HTML5 y de las que más revuelo causaron, sobre todo por su gran capacidad de autovalidación de una manera extremadamente fácil y sin necesidad de utilizar JavaScript.
+				<H2> EJEMPLO: </H2>
+
+				<form action="formularios.html" method="get" name="datos">
+					<table align="center" border="7" bordercolor=#7DB1B8>
+						<tr>
+							<th colspan="2"> DATOS PERSONALES</th>
+						</tr>
+						<tr>
+							<th> Nombre </th>
+							<td> <input type="text" size="40" title="Escribe tu Nombre real es el que aparecera en tu celda " name="nombre" autofocus required></td>
+						</tr>
+						<tr>
+							<th> Apellido </th>
+							<td> <input type="text" size="40" title="Escribe tu apellido real es el que aparecera en tu celda " name="apellido" autofocus required></td>
+						</tr>
+						<tr>
+							<th> Correo  </th>
+							<td> <input type="email"  name="correo" placeholder=" usuario@gmail.com" required></td>
+						</tr>
+						<tr>
+							<th> Fecha De Nacimiento </th>
+							<td> <input type="date" value="2000-01-01"  name="nacimiento" title="la fecha en la que naciste" >
+							</td>
+						</tr>
+						<tr>
+							<th> Login </th>
+							<td> <input type="text" size="20"  name="pwd" autofocus required></td>
+						</tr>
+						<tr>
+							<th> Contraseña </th>
+							<td> <input type="password" size="20"  name="pwd" autofocus required></td>
+						</tr>
+						<tr>
+							<th> Edad  </th>
+							<td> <input type="range"  min="18" max="99" value="2" step="1" name="edad"> </td>
+						</tr>
+						<tr>
+							<th> Color Favorito  </th>
+							<td> <input type="color"   value="#FF0000" title="elije color" name="color_favorito" > </td>
+
+						</tr>
+						<tr>
+							<th> Numero  </th>
+							<td> <input type="number"  min="100" max="9999" value="100"> </td>
+						</tr>
+						<tr>
+							<th> Genero  </th>
+							<td> <input type="radio" name="sexo" value="Mujer"> Mujer
+							<input type="radio" name="sexo" value="Hombre"> Hombre 
+							 </td>
+						</tr>
+
+						<tr>
+							<th> Viajes  </th>
+							<td> 
+								<input type="checkbox" name="destino1" value="Sao Pablo"> Sao Pablo (Brasil)
+								<input type="checkbox" name="destino2" value="Bogota"> Bogota (colombia)
+								<input type="checkbox" name="destino3" value="Buenos Aires"> Buenos Aires (Argentina)
+							 </td>
+						</tr>
+						<tr>
+							<td> <input type="submit" name="Enviar"></td>
+							<td> <input type="reset" name="borrar" value=" Borrar"></td>
+						</tr>
+						
+					</table>
+				 </form>
+				 <h2>EJEMPLO 2</h2>
+				 a continuacion podras ver un video el cual te esplica dese cero como se crea un formulario.
+
+	 			<div align="center"><video  width="800" height="600" controls autoplay> 
+	 				<source src="videos/video2.mp4" type="video/mp4">
+	 			</video></div>
+
+	 			<h2> Autovalidacion grafica </h2>
+	 			Para que el formulario pueda resaltar visualmente qué campos obligatorios es necesario rellenar, que campos son válidos o qué campos tienen valores incorrectos utilizamos el selector :invalid{, mientras que el selector [required]{ señala aquellos campos que son obligatorios y que los valores introducidos son correctos y :valid{ se encarga de gestionar aquellos campos que son correctos.
+	 			</blockquote>
+	 			<blockquote>
+	 			<div align="center"><img src="imagenes/c2.png"></div>
+	 			</blockquote>
+	 			<blockquote>
+	 			Con este código CSS todos los campos con valores obligatorios (es decir, que tengan el atributo required) y que tengan un valor correcto, tendrán el borde de color verde y una sombra interna también verde. Aquellos campos que tienen valores incorrectos o bien están sin rellenar, siendo obligatorios, tendrán un borde y una sombra interna de 8 píxeles de color rojo y aquellos campos que tengan un contenido válido, tendrán tanto el borde como la sombra de color azul.
+	 			</blockquote>
+
+
+			
+		</article>
+	</section>
+
+	
+	<footer>
+		<img src="imagenes/pie.gif" width="1330" height="150" >
+	</footer>
+</body>
+</html>
